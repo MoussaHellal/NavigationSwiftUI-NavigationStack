@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		B54989422A1A5332005AF12E /* NavigationSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54989412A1A5332005AF12E /* NavigationSwiftUIApp.swift */; };
-		B54989442A1A5332005AF12E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54989432A1A5332005AF12E /* ContentView.swift */; };
+		B54989442A1A5332005AF12E /* DrinkyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54989432A1A5332005AF12E /* DrinkyView.swift */; };
 		B54989462A1A5333005AF12E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B54989452A1A5333005AF12E /* Assets.xcassets */; };
 		B54989492A1A5333005AF12E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B54989482A1A5333005AF12E /* Preview Assets.xcassets */; };
 		B54989532A1A5333005AF12E /* NavigationSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54989522A1A5333005AF12E /* NavigationSwiftUITests.swift */; };
 		B549895D2A1A5333005AF12E /* NavigationSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B549895C2A1A5333005AF12E /* NavigationSwiftUIUITests.swift */; };
 		B549895F2A1A5333005AF12E /* NavigationSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B549895E2A1A5333005AF12E /* NavigationSwiftUIUITestsLaunchTests.swift */; };
+		B549896C2A1A534E005AF12E /* DrinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B549896B2A1A534E005AF12E /* DrinkModel.swift */; };
+		B549896E2A1A5369005AF12E /* DrinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B549896D2A1A5369005AF12E /* DrinkViewModel.swift */; };
+		B54989722A1A5568005AF12E /* DrinkyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54989712A1A5568005AF12E /* DrinkyDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		B549893E2A1A5332005AF12E /* NavigationSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54989412A1A5332005AF12E /* NavigationSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSwiftUIApp.swift; sourceTree = "<group>"; };
-		B54989432A1A5332005AF12E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B54989432A1A5332005AF12E /* DrinkyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkyView.swift; sourceTree = "<group>"; };
 		B54989452A1A5333005AF12E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B54989482A1A5333005AF12E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B549894E2A1A5333005AF12E /* NavigationSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,9 @@
 		B54989582A1A5333005AF12E /* NavigationSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B549895C2A1A5333005AF12E /* NavigationSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSwiftUIUITests.swift; sourceTree = "<group>"; };
 		B549895E2A1A5333005AF12E /* NavigationSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B549896B2A1A534E005AF12E /* DrinkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkModel.swift; sourceTree = "<group>"; };
+		B549896D2A1A5369005AF12E /* DrinkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkViewModel.swift; sourceTree = "<group>"; };
+		B54989712A1A5568005AF12E /* DrinkyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkyDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +100,9 @@
 		B54989402A1A5332005AF12E /* NavigationSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				B549896F2A1A553F005AF12E /* Drinky */,
+				B54989702A1A554C005AF12E /* DrinkyDetail */,
 				B54989412A1A5332005AF12E /* NavigationSwiftUIApp.swift */,
-				B54989432A1A5332005AF12E /* ContentView.swift */,
 				B54989452A1A5333005AF12E /* Assets.xcassets */,
 				B54989472A1A5333005AF12E /* Preview Content */,
 			);
@@ -125,6 +132,24 @@
 				B549895E2A1A5333005AF12E /* NavigationSwiftUIUITestsLaunchTests.swift */,
 			);
 			path = NavigationSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		B549896F2A1A553F005AF12E /* Drinky */ = {
+			isa = PBXGroup;
+			children = (
+				B549896B2A1A534E005AF12E /* DrinkModel.swift */,
+				B549896D2A1A5369005AF12E /* DrinkViewModel.swift */,
+				B54989432A1A5332005AF12E /* DrinkyView.swift */,
+			);
+			path = Drinky;
+			sourceTree = "<group>";
+		};
+		B54989702A1A554C005AF12E /* DrinkyDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B54989712A1A5568005AF12E /* DrinkyDetailView.swift */,
+			);
+			path = DrinkyDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B54989442A1A5332005AF12E /* ContentView.swift in Sources */,
+				B54989442A1A5332005AF12E /* DrinkyView.swift in Sources */,
 				B54989422A1A5332005AF12E /* NavigationSwiftUIApp.swift in Sources */,
+				B549896C2A1A534E005AF12E /* DrinkModel.swift in Sources */,
+				B54989722A1A5568005AF12E /* DrinkyDetailView.swift in Sources */,
+				B549896E2A1A5369005AF12E /* DrinkViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
